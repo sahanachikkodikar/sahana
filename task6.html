@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<title>Feedback Survey Form</title>
+</head>
+<body bgcolor="lightgray" text="Black">
+<form action="feedback" method="post">
+  <h2>Feedback On Coaching Session</h2>
+  
+   <!-- Text input -->
+     Name:&nbsp;<input type="text" id="name" name="name">
+  <br> <br>
+  
+  <!-- Email input -->
+   Email:&nbsp;<input type="email" id="email" name="email"><br><br>
+  
+  <!-- Dropdown menu  for rating scales-->
+   <h3>How would you rate the Coaching experience overall?</h3>
+    <label for="Rating">Ratings for our session:</label>
+    <select>
+    <option value="excellent">1</option>
+    <option value="good">2</option>
+    <option value="Average">3</option>
+    <option value="poor">4</option>
+    <option value="poor">5</option>
+  </select><br><br>
+  
+  <!-- radio buttons fir selecting single options -->
+  <h3>Did the training meet your expectations and learning objectives?</h3>
+   Yes&nbsp;<input type="radio" id="yes" name="yes"value="yes">
+   No&nbsp;<input type="radio" id="no" name="no" value="no">
+
+  <!-- Checkbox -->
+  <h3>Coaching Experience:</h3>
+  <input type="checkbox" name="Experience">
+  <label>The coaching sessions were well-structured.</label><br>
+  <input type="checkbox" name="Experience">
+  <label>The coach provided valuable insights and guidance.</label><br>
+  <input type="checkbox" name="Experience">
+  <label >The coaching met my expectations.</label><br><br>
+  
+  <!-- Textarea for feedback -->
+  <h3>What did you like best about the coaching?</h3>
+  <textarea  value="Answer"name="feedback" rows="4" cols="50" ></textarea><br><br>
+  
+  <input type="submit" value="Submit">
+  <input type="Reset" value="Clear">
+</form>
+</body>
+</html>
