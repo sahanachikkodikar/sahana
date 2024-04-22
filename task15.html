@@ -1,0 +1,157 @@
+<html lang="en">
+<head>
+	<style>
+		/*css tables*/
+		#student{
+			font-family: verdana;
+			border-collapse: collapse;
+			width:90%;
+
+		}
+
+		#student td,#student th{
+			border: 2px solid black;
+			padding: 10px;
+		}
+		#student tr:nth-child(even){background-color: #ffa07a;}
+
+		#student tr:hover{background-color: #e9967a;}
+
+		#student th{
+			text-align:center;
+			background-color: #000;
+			color: white;
+			padding-top: 14px;
+			padding-bottom: 12px;
+		}
+
+		/*css position properties*/
+
+		div.static{
+			position: static;
+			border: 2px solid;
+		
+		}
+
+		div.relative
+			{
+			position: relative;
+			border: 2px solid;
+			top: 20px;
+			}
+	
+		div.fixed
+			{
+			position: fixed;
+			border: 2px solid;
+			right: 4px;
+			background-color: #ffa07a;
+			}
+
+		div.absoulate_ancestor
+			{
+			position:relative;
+			border: 2px solid;
+			width: 500px;
+			height: 200px;
+			border: 2px solid black;
+			}
+
+		div.absoulate
+			{
+			position: absolute;
+			border: 2px solid #ffa07a;
+			top: 80px;
+			right: 10px;
+			width: 200px;
+			height: 70px;
+			}
+
+		div.sticky
+			{
+			top: 0px;
+			position:sticky;
+			border: 4px solid black;
+			padding: 5px;
+			border: 2px solid black;
+			background-color: ffa07a;
+			color:#000;
+			}
+		</style>
+</head>
+
+<body>
+	<title>CSS Tables and Position</title>
+	<h1 style="text-decoration:underline; font-size:50px; color:black; text-align: center;">CSS Tables and Position</h1>
+	 <table id="student" align="center">
+     	<!--tables creation-->
+     	<tr>
+			<th>Name</th>
+			<th>Age</th>
+			<th>Id</th>
+			
+		</tr>
+		<tr>
+			<td>Harry</td>
+			<td>20</td>
+			<td>121</td>
+		</tr>
+		<tr>
+		   <td>Larry</td>
+		   <td>21</td>
+		   <td>122</td>
+		</tr>
+		<tr>
+			<td>john</td>
+			<td>24</td>
+			<td>123</td>
+		</tr>
+
+		<tr>
+			<td>James</td>
+			<td>28</td>
+			<td>124</td>
+		</tr>
+
+		<tr>
+			<td>Evelyn</td>
+			<td>20</td>
+			<td>125</td>
+		</tr>
+    
+</table>
+	
+	<h2 style="text-decoration: underline;"> Static Position:</h2>
+	<div class="static">
+		Example For Static Position
+	</div>
+
+	
+	<h2 style="text-decoration: underline;"> Relative Position: </h2>
+	<div class="relative">
+		Example For Relative Position
+	</div>
+<br>
+
+	
+	<h2 style="text-decoration: underline;"> Fixed Position:</h2>
+	<div class="fixed">
+		Example For Fixed Position
+	</div>
+
+	
+	<h2 style="text-decoration: underline;">Absoulate Position:</h2>
+	<div class="absoulate_ancestor">
+		Example For Absoulate_ancestor
+	<div class="absoulate">
+		Example For Absoulate Position</div>
+	</div>
+
+
+		<h2 style="text-decoration: underline;"> Sticky Position: </h2>
+	<div class="sticky">
+		Example For Sticky Position</div>
+	<p style="font-family: verdana; font-size:40px; padding-bottom: 700px;">A sticky element is one that toggles between relative and fixed positioning based on the user’s scroll position.A position sticky element toggles between the relative value and the fixed value on the viewport. The state on which the CSS sticky element is currently present depends on the scroll position of the browser window.</p>
+</body>
+</html>
+
