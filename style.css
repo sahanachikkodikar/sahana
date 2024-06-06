@@ -1,6 +1,8 @@
 
 
+
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Poppins:wght@400;500;600;700&display=swap");
+
 
 :root {
   --primary-color: #0f1a2c;
@@ -21,7 +23,7 @@
 
 .section__container {
   max-width: var(--max-width);
-  margin: auto;
+  margin: auto;n
   padding: 5rem 1rem;
 }
 
@@ -155,6 +157,7 @@ nav {
   color: var(--secondary-color);
 }
 
+
 .header {
   padding-block: 5rem;
   background-image: linear-gradient(
@@ -179,6 +182,39 @@ nav {
   font-family: var(--header-font);
   color: var(--white);
 }
+
+
+/* Add styles for hidden sections */
+.hidden {
+    display: none;
+  }
+  .overlay {
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 170%;
+    height: 100%;
+    
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+
+.form-container {
+          color: #f6ac0f;
+          outline: none;
+          border: solid;
+          background: transparent;
+          cursor: pointer;
+    padding: 20px;
+    border-radius: 10px;
+   border-color: orange;
+  font-size: 20px;
+    
+
+  }
 
 .booking {
   background-color: var(--primary-color);
@@ -218,80 +254,7 @@ nav {
 }
 
 
-.services::before {
-  position: absolute;
-  content: "";
-  bottom: 0;
-  right: 0;
-  height: 75%;
-  width: 100%;
-  
-  background-image: url("placep-4.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  opacity: 0.05;
-  z-index: -1;
-}
-        .services__container{
-          display: grid;
-          gap: 4rem 2rem;
 
-        }
-        .services__grid {
-          margin-top: 4rem;
-           display: grid;
-           gap: 2rem;
-                       }
-        .services__card {
-            width: 45%;
-            margin: auto;
-            overflow: hidden;
-            font-size: 70%;
-
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding-top: 60px;
-            min-height: 70px;
-            border-bottom: #77aaff 3px solid;
-        }
-        header a {
-            color: #fff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 10px;
-        }
-        header ul {
-            padding: 0;
-            list-style: none;
-        }
-        header ul li {
-            display: inline;
-            padding: 0 20px 0 20px;
-        }
-        header .highlight, header .current a {
-            color: #77aaff;
-            font-weight: bold;
-        }
-        #services {
-            margin: 30px 0;
-        }
-        .services {
-            background: #fff;
-            padding: 20px;
-            margin-bottom: 10px;
-            border-radius: 7px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .services h3 {
-            margin-top: 0;
-            color: #333;
-        }
-        .services__container :is(.section__subheader, .section__header) {
-          text-align: center;
-        }
 .about {
   position: relative;
   isolation: isolate;
@@ -365,6 +328,70 @@ nav {
 
 .about__content .section__description {
   margin-bottom: 2rem;
+}
+.services{
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #f8fafc;
+}
+
+header {
+  background-color: #008CBA;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+#services {
+  padding: 50px;
+  text-align: center;
+}
+
+#services h2 {
+  margin-bottom: 50px;
+  font-size: 2.5em;
+}
+
+.service {
+  display: inline-block;
+  width: 45%;
+  margin: 2.5%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.service img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.service h3 {
+  font-size: 1.5em;
+  margin: 20px 0 10px;
 }
 
 .feature__container :is(.section__subheader, .section__header) {
@@ -465,7 +492,7 @@ nav {
 }
 
 .footer__socials a {
-  padding: 6px 10px;
+  padding: 10px 10px;
   font-size: 1.25rem;
   color: var(--text-light);
   background-color: var(--white);

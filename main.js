@@ -48,4 +48,4 @@ ScrollReveal().reveal(".place__card", {
   ...scrollRevealOption,
   interval: 500,
 });
-     
+      
