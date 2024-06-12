@@ -200,9 +200,7 @@ nav {
     align-items: center;
     
   }
-
-
-.form-container {
+  .form-container {
           color: #f6ac0f;
           outline: none;
           border: solid;
@@ -492,7 +490,7 @@ nav ul li a {
 }
 
 .footer__socials a {
-    padding: 8px;
+    padding: 6px;
     font-size: 1.10rem;
   color: var(--text-light);
   background-color: var(--white);
