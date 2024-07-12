@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST['password'];
 
     // Insert data into the database
-    $sql = "INSERT INTO userss (email, password) VALUES (?, ?)";
+    $sql = "INSERT INTO login(email, password) VALUES (?, ?)";
     $stmt = $conn->prepare($sql);
     if ($stmt === false) {
         die('Error preparing the SQL statement: ' . $conn->error);

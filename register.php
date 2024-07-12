@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 include 'connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
